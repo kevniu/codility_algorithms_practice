@@ -3,14 +3,14 @@ def solution(n, a)
   max = 0
   min = 0
 
-  a.each do |v|
-    if v <= n
-      if counters[v - 1] < min + 1
-        counters[v - 1] = min + 1
+  a.each do |num|
+    if num <= n
+      if counters[num - 1] < min + 1
+        counters[num - 1] = min + 1
       else
-        counters[v - 1] += 1
+        counters[num - 1] += 1
       end
-      max = [max, counters[v - 1]].max
+      max = [max, counters[num - 1]].max
     else
       min = max
     end
