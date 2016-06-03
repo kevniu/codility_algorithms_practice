@@ -7,7 +7,3 @@ def solution(x, a)
   end
   -1
 end
-
-def frog_river_one(x, a)
-
-end
